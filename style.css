@@ -24,7 +24,7 @@ p {
 .big-container {
   box-sizing: border-box;
   width: 90vw;
-  height: 42vh;
+  height: 48vh;
   border-width: 2px;
   border-radius: 10px;
   border-style: solid;
@@ -73,7 +73,7 @@ button {
 .clicker-button {
   width: 90%;
 
-  height: 8%;
+  height: 20%;
 }
 @media screen and (min-width: 768px) {
   .clicker-button {
