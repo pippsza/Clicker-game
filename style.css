@@ -37,6 +37,7 @@ p {
     height: 60vh;
   }
 }
+
 .nav-menu {
   box-sizing: border-box;
   display: flex;
@@ -134,10 +135,20 @@ button:hover {
   border-radius: 0;
   border-color: rgb(104, 106, 104);
   color: black;
-  font-size: 40px;
+  font-size: 14px;
   border: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .cross-link {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .cross-link {
+    font-size: 40px;
+  }
+}
 .modal-window {
   position: absolute;
   height: 99vh;

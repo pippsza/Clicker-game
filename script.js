@@ -7,7 +7,7 @@ const winModal = document.querySelector(".js-modal");
 const rebithButton = document.querySelector(".rebith-button");
 const clickSound = new Audio("./meow.mp3");
 const clickPower = document.querySelector(".js-text");
-
+const backdropCloser = document.querySelector(".js-closer");
 let count = 1;
 let clickCounter = 0;
 
@@ -15,6 +15,13 @@ modalButtonClose.addEventListener("click", () => {
   const clickButtonSound = new Audio("./click.wav");
   clickButtonSound.play();
   modalWindow.classList.add("is-open");
+});
+
+backdropCloser.addEventListener("click", () => {
+  if (event.target === backdropCloser) {
+    console.log("Нажатие по бэкдропу");
+    modalWindow.classList.remove("is-open");
+  }
 });
 
 modalButton.addEventListener("click", () => {
@@ -51,11 +58,6 @@ rebithButton.addEventListener("click", () => {
   clickButtonSound.play();
 
   if (clickCounter >= 100) {
-    if (count == 10) {
-      winModal.classList.add("is-open");
-      clickSound.loop = true;
-      clickSound.play();
-    }
     clickCounter -= 100;
     clickCounterTitle.textContent = clickCounter;
     count += 1;
@@ -91,6 +93,11 @@ rebithButton.addEventListener("click", () => {
         popup.remove();
       }, 600);
     }, 1400);
+  }
+  if (count == 10) {
+    winModal.classList.add("is-open");
+    clickSound.loop = true;
+    clickSound.play();
   }
   clickPower.textContent = `Your click power is ${count}!`;
 });
