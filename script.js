@@ -6,6 +6,7 @@ const clickCounterTitle = document.querySelector(".js-click-title");
 const winModal = document.querySelector(".js-modal");
 const rebithButton = document.querySelector(".rebith-button");
 const clickSound = new Audio("./meow.mp3");
+const clickPower = document.querySelector(".js-text");
 
 let count = 1;
 let clickCounter = 0;
@@ -48,6 +49,7 @@ clickButton.addEventListener("click", () => {
 rebithButton.addEventListener("click", () => {
   const clickButtonSound = new Audio("./click.wav");
   clickButtonSound.play();
+
   if (clickCounter >= 100) {
     if (count == 10) {
       winModal.classList.add("is-open");
@@ -90,4 +92,5 @@ rebithButton.addEventListener("click", () => {
       }, 600);
     }, 1400);
   }
+  clickPower.textContent = `Your click power is ${count}!`;
 });
