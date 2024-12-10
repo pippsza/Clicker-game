@@ -148,7 +148,7 @@ button:hover {
   pointer-events: none;
 }
 .screamer-window {
-  background-image: url(/RdsN.gif);
+  background-image: url(./RdsN.gif);
   background-size: contain;
 
   position: absolute;

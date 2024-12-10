@@ -11,10 +11,14 @@ let count = 1;
 let clickCounter = 0;
 
 modalButtonClose.addEventListener("click", () => {
+  const clickButtonSound = new Audio("./click.wav");
+  clickButtonSound.play();
   modalWindow.classList.add("is-open");
 });
 
 modalButton.addEventListener("click", () => {
+  const clickButtonSound = new Audio("./click.wav");
+  clickButtonSound.play();
   modalWindow.classList.remove("is-open");
 });
 
