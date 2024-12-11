@@ -8,6 +8,7 @@ const rebithButton = document.querySelector(".rebith-button");
 const clickSound = new Audio("./meow.mp3");
 const clickPower = document.querySelector(".js-text");
 const backdropCloser = document.querySelector(".js-closer");
+
 let count = 1;
 let clickCounter = 0;
 
