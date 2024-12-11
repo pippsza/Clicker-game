@@ -135,10 +135,10 @@ button:hover {
   border-radius: 0;
   border-color: rgb(104, 106, 104);
   color: black;
-  font-size: 14px;
+  font-size: 4vh;
   border: 0;
 }
-
+/* 
 @media screen and (min-width: 768px) {
   .cross-link {
     font-size: 20px;
@@ -148,7 +148,7 @@ button:hover {
   .cross-link {
     font-size: 40px;
   }
-}
+} */
 .modal-window {
   position: absolute;
   height: 99vh;
